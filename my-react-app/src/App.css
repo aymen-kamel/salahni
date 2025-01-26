@@ -1,0 +1,171 @@
+/* Reset body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow: auto;
+}
+
+/* Fullscreen container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensures it spans the full viewport height */
+  box-sizing: border-box;
+}
+
+/* Content styling */
+.full-screen-content {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%; /* Full width */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #253edd;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #253edd;
+}
+
+.auth-buttons button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.auth-buttons .sign-up {
+  background-color: #253edd;
+  color: #fff;
+}
+
+.auth-buttons button:hover {
+  background-color: #fae3dc;
+}
+
+.auth-buttons .sign-up:hover {
+  background-color: #253edd;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('/images/bathroom-remodel-angi-v2 (1).jpg');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Adjust the height of the hero section */
+  color: white; /* Makes text visible on top of the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Section Styles */
+.services, .popular-projects, .additional-services, .maintenance {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  max-width: 1200px; /* Center content on larger screens */
+  width: 100%;
+}
+.icon-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.icon-item {
+  text-align: center;
+  margin: 0 15px;
+}
+
+.icon-item img {
+  width: 60px; /* Adjust size */
+  height: 60px; /* Adjust size */
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.icon-item span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #333;
+}
+
+
+
